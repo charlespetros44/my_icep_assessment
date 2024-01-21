@@ -1,0 +1,44 @@
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+ubuntu@ip-172-31-27-166:~$ cd dowloads
+bash: cd: dowloads: No such file or directory
+ubuntu@ip-172-31-27-166:~$ cd downloads
+bash: cd: downloads: No such file or directory
+ubuntu@ip-172-31-27-166:~$ cd weather_data
+ubuntu@ip-172-31-27-166:~/weather_data$ python3 main.py
+Weather Forecast for the Next Three Days:
+2024-01-20 23:00 to 2024-01-21 06:00: Temperature: 52°F, Forecast: Rain
+2024-01-21 06:00 to 2024-01-21 18:00: Temperature: 61°F, Forecast: Light Rain
+2024-01-21 18:00 to 2024-01-22 06:00: Temperature: 52°F, Forecast: Rain then Showers And Thunderstorms
+Forecast data saved to: weather_forecast.csv
+ubuntu@ip-172-31-27-166:~/weather_data$ git init
+Reinitialized existing Git repository in /home/ubuntu/weather_data/.git/
+ubuntu@ip-172-31-27-166:~/weather_data$ git add .
+ubuntu@ip-172-31-27-166:~/weather_data$ git commit -am "icep instances"
+[master 250fcfa] icep instances
+ Committer: Ubuntu <ubuntu@ip-172-31-27-166.ec2.internal>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ubuntu@ip-172-31-27-166:~/weather_data$ git remote add origin https://github.com/charlespetros44/my_icep_assessment.git
+ubuntu@ip-172-31-27-166:~/weather_data$ git push origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 1.41 KiB | 1.41 MiB/s, done.
+Total 7 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/charlespetros44/my_icep_assessment.git
+ * [new branch]      master -> master
+ubuntu@ip-172-31-27-166:~/weather_data$ 
